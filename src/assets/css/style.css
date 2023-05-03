@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+h1,
+h2,
+p,
+a,
+ul,
+li,
+input,
+button,
+textarea,
+select,
+option,
+table,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 1.5rem !important;
+}
+h2 {
+  font-size: 1.25rem !important;
+}
+nav {
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.createblog {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+textarea.form-control {
+  min-height: 300px;
+  overflow-y: auto;
+}
+.card-body {
+  height: 100px;
+}
+.blogcard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-body p {
+  max-width: 425px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-header h2 {
+  max-width: 350px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.icon {
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.editbtn:hover {
+  color: rgb(105, 183, 15);
+  animation: shake 0.5s linear;
+}
+.deletebtn:hover {
+  color: rgb(198, 0, 0);
+  animation: shake 0.5s linear;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.25);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1.25);
+  }
+  75% {
+    transform: rotate(10deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
